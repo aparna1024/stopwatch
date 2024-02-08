@@ -1,0 +1,35 @@
+<!-- Build a Clock and fulfill the below User stories.
+User Story 1: Create a div with the class container and center it on screen
+User Story 2: Give body background black colour and text colour white.
+User Story 3: Implement a label tag and show the time in this label tag.
+User Story 4: Implement two buttons named as Lap and Start.
+User Story 5: Start button starts the timer of the stopwatch.
+User Story 6: The lap button prepends a new list element with the current time at which the stopwatch was clicked.
+User Story 7: If stopwatch is running change the start button to stop button with a red background.
+User Story 8: If the user stops the time change the Lap button to reset which resets the stopwatch. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <label><h1 id="timing">00 : 00 : 00</h1></label>
+        <div id="buton" >
+        <button id="lap" class="butn" Style=" margin-left:20%;">Lap</button>
+        <button id="reset" class="butn" style="  display: none ; margin-left:20%;" >Reset</button>
+        <button id="start" class="butn" Style=" margin-right:20%;">Start</button>
+        <button id="stop" class="butn" style="  display: none ; margin-right:20%;">stop</button>
+        </div>
+        <div id="laplist" class="butn">
+        <ul id="timingList"></ul>
+    </div>
+    </div>  
+
+</body>    
+<script src="index.js"></script>
+</html>
